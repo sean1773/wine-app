@@ -2,10 +2,13 @@ import React from "react";
 import Card from "../UI/Card";
 
 const QuestionCard = (props) => {
-    console.log(props[1])
+    
+   let question = props.info.questionInfo[0].question;
+
+
     return (
         <Card>
-            <h2>Question</h2>
+            <h2>{question}</h2>
         </Card>
     )
 };

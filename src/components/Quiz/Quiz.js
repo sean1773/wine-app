@@ -5,18 +5,14 @@ import Card from "../UI/Card";
 
 const Quiz = (props) => {
   
-    // let qIndex = 1;
+  const data = props;  
 
-    // const [currentQuestion, setCurrentQuestion] = useState(props);
 
-    // const questionHandler = (props[0].id) => {
-    //     setCurrentQuestion();
-    // }
 
   return (
     <Card>
-      <QuestionCard info={props} />
-      <AnswersCard />
+      <QuestionCard info={data} />
+      <AnswersCard info={data} />
     </Card>
   );
 };

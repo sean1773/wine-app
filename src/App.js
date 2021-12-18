@@ -46,7 +46,7 @@ const App = () => {
   const startQuizHandler = () =>{
     setStartQuiz(!startQuiz);
 };
-
+    console.log("app.js", DUMMY_DATABASE)
   return (
     <div>
       { startQuiz && <StartPage startQuiz={startQuizHandler} />}
